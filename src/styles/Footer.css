@@ -1,5 +1,11 @@
 .social-icon {
-  width: 2rem;
+  width: 1.5rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.fb-icon {
+  width: 1rem;
   height: auto;
   cursor: pointer;
 }
@@ -10,6 +16,7 @@
   cursor: pointer;
 }
 
+.fb-icon:hover,
 .social-icon:hover {
   transform: scale(1.2);
 }
@@ -19,8 +26,12 @@
 }
 
 footer {
-  background-color: #424242;
+  background-color: #333;
   color: white;
-  padding: 1.5rem 0; /* Esto es: padding arriba y abajo 1.5rem y padding a los lados 0 */
-  padding: 2rem 0;
+  padding: 1rem 0;
+}
+
+.copyright {
+  font-size: 0.9rem;
+  color: #aaa;
 }

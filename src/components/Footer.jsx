@@ -4,19 +4,21 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer className="w-100 mt-4 flex-col align-center justify-center">
-      <div className="footer-content flex flex-row space-evenly mb-2 flex-wrap">
-        <div className="flex flex-col gap-2">
+      <div className="footer-content flex flex-row space-evenly mb-2 flex-wrap p-1">
+        <div className="flex flex-col gap-2 text-start w-100">
           <div>
             <span>Home</span> |<span>Terms and Conditions</span> |
             <span>Privacy Policy</span> |<span>Collection Statement</span> |
             <span>Help</span> |<span>Manage Account</span>
           </div>
-          <p className="mb-2">2016 DEMO Streaming. All Rights Reserved.</p>
+          <p className="copyright mb-2">
+            2016 DEMO Streaming. All Rights Reserved.
+          </p>
         </div>
         <div className="flex flex-row gap-2 space-between w-100">
           <div className="flex flex-row gap-2">
             <img
-              className="social-icon"
+              className="fb-icon"
               src="/prueba-react/assets/social/facebook-white.svg"
               alt="Facebook"
             />

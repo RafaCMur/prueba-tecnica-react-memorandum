@@ -172,6 +172,10 @@
   margin-right: 10rem;
 }
 
+.p-1 {
+  padding: 1rem;
+}
+
 @media (max-width: 768px) {
   .flex-container {
     flex-direction: column;
