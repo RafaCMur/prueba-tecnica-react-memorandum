@@ -1,5 +1,12 @@
+import Title from "./Title";
+
 const Peliculas = () => {
-  return <p>Página de Películas</p>;
+  return (
+    <>
+      <Title text="Películas Populares" />
+      <p>Página de Películas</p>
+    </>
+  );
 };
 
 export default Peliculas;
