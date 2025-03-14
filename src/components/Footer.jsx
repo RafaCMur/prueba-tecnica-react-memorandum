@@ -7,16 +7,17 @@ const Footer = () => {
       <div className="footer-content flex flex-row space-evenly mb-2 flex-wrap p-1">
         <div className="flex flex-col gap-2 text-start w-100">
           <div>
-            <span>Home</span> |<span>Terms and Conditions</span> |
-            <span>Privacy Policy</span> |<span>Collection Statement</span> |
-            <span>Help</span> |<span>Manage Account</span>
+            <span>
+              Home | Terms and Conditions | Privacy Policy | Collection |
+              Statement | Help | Manage Account
+            </span>
           </div>
           <p className="copyright mb-2">
             2016 DEMO Streaming. All Rights Reserved.
           </p>
         </div>
-        <div className="flex flex-row gap-2 space-between w-100">
-          <div className="flex flex-row gap-2">
+        <div className="flex flex-row gap-2 space-between w-100 flex-wrap">
+          <div className="flex flex-row gap-2 flex-wrap">
             <img
               className="fb-icon"
               src="/prueba-react/assets/social/facebook-white.svg"
@@ -33,7 +34,7 @@ const Footer = () => {
               alt="Instagram"
             />
           </div>
-          <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-2 flex-wrap">
             <img
               className="store-icon"
               src="/prueba-react/assets/store/app-store.svg"
