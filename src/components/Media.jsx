@@ -58,12 +58,6 @@ const Media = ({ programType }) => {
   const titulo =
     programType === "movie" ? "Películas Populares" : "Series Populares";
 
-  // Funcion util para mostrar en consola los elementos filtrados clickando por ejemplo un botón. No es necesario para la tarea.
-  const consolelog = () => {
-    console.log(moviesAndSeries);
-    console.log(filteredMedia);
-  };
-
   return (
     <>
       <Title text={titulo} />
