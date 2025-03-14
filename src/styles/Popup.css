@@ -19,6 +19,13 @@
   background-color: #fff;
 }
 
+.close-btn {
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+}
+
 .popup-inner .close-btn {
   position: absolute;
   top: 16px;
