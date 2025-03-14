@@ -1,0 +1,6 @@
+@import url("./mini-tailwind.css");
+
+/* Esto ayuda a que los elementos no se desborden de la pantalla */
+* {
+  box-sizing: border-box;
+}
