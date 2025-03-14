@@ -68,11 +68,6 @@ const Media = ({ programType }) => {
     <>
       <Title text={titulo} />
       <section>
-        <button onClick={consolelog}>Mostrar en consola BOTON TEMPORAL</button>
-        {/* Debemos hacer un carousel de imagenes */}
-        {/* Con la imagen extraida de la propiedad images.Poster Art de cada película o serie */}
-        {/* Ahora de 10 en 10 */}
-
         <div className="media-container flex flex-row flex-wrap justify-center gap-1">
           {mediaAMostrarJSX()}
         </div>
