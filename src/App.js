@@ -12,8 +12,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/series" element={<Media programType={"movie"} />} />
-          <Route path="/peliculas" element={<Media programType={"series"} />} />
+          <Route path="/series" element={<Media programType={"series"} />} />
+          <Route path="/peliculas" element={<Media programType={"movie"} />} />
         </Routes>
         <Footer />
       </div>
