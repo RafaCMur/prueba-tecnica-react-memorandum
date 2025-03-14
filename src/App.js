@@ -6,6 +6,7 @@ import Inicio from "./components/Inicio";
 import Series from "./components/Series";
 import Peliculas from "./components/Peliculas";
 import Footer from "./components/Footer";
+import Media from "./components/Media";
 
 function App() {
   return (
@@ -14,8 +15,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path="/" element={<Inicio />} />
-          <Route path="/series" element={<Series />} />
-          <Route path="/peliculas" element={<Peliculas />} />
+          <Route path="/series" element={<Media programType={"movie"} />} />
+          <Route path="/peliculas" element={<Media programType={"series"} />} />
         </Routes>
         <Footer />
       </div>
