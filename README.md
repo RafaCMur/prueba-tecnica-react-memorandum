@@ -16,4 +16,46 @@ Si hubiese utilizado directamente tailwind css posiblemente el desarrollo hubies
 
 ## ¿Hay alguna mejora que pueda hacer en su envío?
 
+- Añadir las secciones de series y peliculas
+- Corregir los iconos SVG de las películas, que se ven achatados por los lados debido a forzar la width y el height de las imágenes en la página principal
+- Quizá estilizar el contenido para que no tenga ese fondo blanco. Haría un diseño más moderno.
+- También reorganizaría la estructura de las carpetas, quizá algunas cosas las movería de public a src.
+- En las series y películas, aplicar filtros, sorts, permitir al usuario elegir entre cards, listas, etc.
+
 ## ¿Qué haría de manera diferente si se le asignara más tiempo?
+
+- Crearía un componente solo para la sección, tal y como muestro en mi proyecto de next (en este caso está hecho con tailwind):
+
+import React from "react";
+
+interface SectionProps {
+  children: React.ReactNode;
+  className?: string;
+  fullWidth?: boolean;
+}
+
+```tsx
+const Section: React.FC<SectionProps> = ({
+  children,
+  className = "",
+  fullWidth = false,
+}) => {
+  return (
+    <section className={`w-full ${className}`}>
+      <div id="section-content" className={`mx-auto w-full`}>
+        {children}
+      </div>
+    </section>
+  );
+};
+
+export default Section;
+```
+
+- Reorganizar las secciones y la estructura del proyecto en general.
+- **Mejorar la organización** de los archivos css.
+- **Añadir variables css** por ejemplo para el max-width de 1000.
+- **Utilizaría media queries** para móvil.
+- Quizá instalaría tailwind.css** porque es algo estándar y ayudaría con el tema de las media queries. Pero de momento he utilizado mi archivo mini-tailwind.
+- **Agregaria pruebas unitarias** con Jest y React Testing Library para validar el funcionamiento de los componentes clave.
+- **Mejoraría la accesibilidad** asegurando que los elementos tengan etiquetas ARIA siguiendo las guidelines de la WCAG.
