@@ -7,7 +7,7 @@ const Header = () => {
       <h1>Header</h1>
       <div className="flex flex-row space-between align-center gap-1">
         <span>Log in</span>
-        <button>Start your free trial</button>
+        <button className="trial-btn">Start your free trial</button>
       </div>
     </header>
   );
