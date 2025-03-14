@@ -3,7 +3,7 @@ import "../styles/Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="w-100 mt-4 flex-col align-center justify-center">
+    <footer className="w-100 flex-col align-center justify-center">
       <div className="footer-content flex flex-row space-evenly mb-2 flex-wrap p-1">
         <div className="flex flex-col gap-2 text-start w-100">
           <div>

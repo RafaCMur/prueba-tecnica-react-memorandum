@@ -9,14 +9,14 @@ function App() {
   return (
     <Router>
       <Header />
-      <div className="App">
+      <main className="app-main-container">
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="/series" element={<Media programType={"series"} />} />
           <Route path="/peliculas" element={<Media programType={"movie"} />} />
         </Routes>
-        <Footer />
-      </div>
+      </main>
+      <Footer />
     </Router>
   );
 }
