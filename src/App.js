@@ -1,10 +1,7 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Header from "./components/Header";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./components/Inicio";
-import Series from "./components/Series";
-import Peliculas from "./components/Peliculas";
 import Footer from "./components/Footer";
 import Media from "./components/Media";
 
