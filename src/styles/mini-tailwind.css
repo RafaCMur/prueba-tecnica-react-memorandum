@@ -23,6 +23,12 @@
 .align-center {
   align-items: center;
 }
+.text-start {
+  text-align: start;
+}
+.text-center {
+  text-align: center;
+}
 .justify-center {
   justify-content: center;
 }
