@@ -1,11 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Title from "./Title";
 import moviesAndSeries from "../data/sample.json";
+import Popup from "./Popup";
 import "../styles/Media.css";
 
 const Media = ({ programType }) => {
   // Solo nos interesa guardar los elementos filtrados (películas o series)
   const [filteredMedia, setFilteredMedia] = useState([]);
+  const [selectedMedia, setSelectedMedia] = useState(null); // Este es el popup
 
   /**
    * Filtramos los elementos (películas o series) y los guardamos en el estado
@@ -41,6 +43,7 @@ const Media = ({ programType }) => {
           className="media-img"
           src={item.images["Poster Art"].url}
           alt={item.title}
+          onClick={() => setSelectedMedia(item)}
           onError={(e) => {
             e.target.onerror = null;
             e.target.src =
@@ -73,6 +76,7 @@ const Media = ({ programType }) => {
         <div className="media-container flex flex-row flex-wrap justify-center gap-1">
           {mediaAMostrarJSX()}
         </div>
+        <Popup item={selectedMedia} onClose={() => setSelectedMedia(null)} />
       </section>
     </>
   );
