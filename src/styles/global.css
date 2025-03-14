@@ -1,6 +1,18 @@
 @import url("./mini-tailwind.css");
 
-/* Esto ayuda a que los elementos no se desborden de la pantalla */
+/* Esto ayuda a que los elementos no se desborden de la pantalla y a corregir los espacios blancos que salen */
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  max-width: 1000px;
+  margin: 0 auto;
 }

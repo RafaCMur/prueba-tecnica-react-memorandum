@@ -1,0 +1,7 @@
+.placeholder-img {
+  background-color: rgb(43, 43, 43);
+  padding: 0.5rem;
+  display: block;
+  width: 10rem;
+  height: 15rem;
+}

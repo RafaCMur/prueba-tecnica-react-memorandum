@@ -4,7 +4,7 @@
   padding: 1rem 1rem;
   text-align: center;
   height: 10vh; /* Esto es un 10% de la altura de la pantalla */
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 1000;
 }
