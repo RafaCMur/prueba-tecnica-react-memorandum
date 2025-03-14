@@ -3,7 +3,7 @@
   color: white;
   padding: 1rem 1rem;
   text-align: center;
-  height: 10vh; /* Esto es un 10% de la altura de la pantalla */
+  min-height: 10vh; /* Esto es un 10% de la altura de la pantalla */
   position: sticky;
   width: 100%;
   z-index: 1000;
@@ -13,6 +13,11 @@
   width: 1000px;
   max-width: 1000px;
   padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
 }
 
 .trial-btn {
@@ -26,7 +31,7 @@
 }
 
 @media (max-width: 768px) {
-  .header {
-    display: none;
+  .header-content {
+    flex-direction: column;
   }
 }

@@ -12,6 +12,7 @@ body {
   padding: 0;
 }
 
+/* La raiz debe tener una altura minima del 100% de la pantalla */
 #root {
   display: flex;
   flex-direction: column;
