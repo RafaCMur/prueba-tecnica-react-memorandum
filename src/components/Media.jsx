@@ -62,7 +62,7 @@ const Media = ({ programType }) => {
     <>
       <Title text={titulo} />
       <section>
-        <div className="media-container flex flex-row flex-wrap justify-center gap-1">
+        <div className="media-container flex flex-row flex-wrap justify-center gap-1 mt-2">
           {mediaAMostrarJSX()}
         </div>
         <Popup item={selectedMedia} onClose={() => setSelectedMedia(null)} />
