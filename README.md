@@ -6,6 +6,26 @@ Me ha dado tiempo a crear lo que es la página principal solamente, pero he podi
 
 Además, practicamente opté por no utilizar chatgpt, solo para preguntarle dudas sobre la navegación de la página y sobre algún espacio que me quedaba en blanco arriba en el header.
 
+## Mejoras
+
+- He decidido modularizar Peliculas y Series en un comoponente 'media' que se encarga de mostrar las películas y series.
+- En caso de que no esté la imagen, hay que mostrar algo, por lo que he añadido un placeholder con un texto que dice "Imagen no disponible".
+
+## El placeholder
+
+Mira que me habia llevado tiempo intentarlo con un fetch, para que en caso de que diese error 404 la url de la imagen, se mostrase el placeholder. Pero no me ha dado tiempo a hacerlo. Así que he decidido hacerlo de esta manera.
+
+```tsx
+onError={(e) => {
+  e.target.onerror = null;
+  e.target.src = "https://placehold.co/100x150/444444/FFFFFF?text=Not+Available";
+}}
+```
+
+Todo gracias a esta web: https://www.thatsoftwaredude.com/content/11661/4-tips-to-handle-404-images-on-your-websites
+
+Así me ahorro problemas con el fetch y gano en eficiencia.
+
 ## ¿Cómo decidió las opciones técnicas y arquitectónicas utilizadas como parte de su solución?
 
 - He utilizado JS en vez de TS por ser un proyecto de pruebas.
@@ -29,9 +49,9 @@ Si hubiese utilizado directamente tailwind css posiblemente el desarrollo hubies
 import React from "react";
 
 interface SectionProps {
-  children: React.ReactNode;
-  className?: string;
-  fullWidth?: boolean;
+children: React.ReactNode;
+className?: string;
+fullWidth?: boolean;
 }
 
 ```tsx
@@ -56,6 +76,6 @@ export default Section;
 - **Mejorar la organización** de los archivos css.
 - **Añadir variables css** por ejemplo para el max-width de 1000.
 - **Utilizaría media queries** para móvil.
-- Quizá instalaría tailwind.css** porque es algo estándar y ayudaría con el tema de las media queries. Pero de momento he utilizado mi archivo mini-tailwind.
+- Quizá instalaría tailwind.css\*\* porque es algo estándar y ayudaría con el tema de las media queries. Pero de momento he utilizado mi archivo mini-tailwind.
 - **Agregaria pruebas unitarias** con Jest y React Testing Library para validar el funcionamiento de los componentes clave.
 - **Mejoraría la accesibilidad** asegurando que los elementos tengan etiquetas ARIA siguiendo las guidelines de la WCAG.

@@ -5,7 +5,7 @@ import "../styles/Media.css";
 
 const Media = ({ programType }) => {
   // Solo nos interesa guardar los elementos filtrados (películas o series)
-  const [filterMedia, setFilterMedia] = useState([]);
+  const [filteredMedia, setFilteredMedia] = useState([]);
 
   /**
    * Filtramos los elementos (películas o series) y los guardamos en el estado
@@ -25,23 +25,27 @@ const Media = ({ programType }) => {
         a.title.localeCompare(b.title)
       );
 
-      setFilterMedia(sortedMediaByTitle);
+      setFilteredMedia(sortedMediaByTitle);
     }
   }, [programType]); // Esto es para que se ejecute solo una vez en el renderizado inicial del componente. Pero hay que añadir programType para que se ejecute cuando cambie.
 
   // Función que devuelve un array de JSX con las imágenes de los elementos filtrados
   // TODO De momento solo mostramos las 20 primeras sin paginacion
   const mediaAMostrarJSX = () => {
-    return filterMedia.slice(0, 20).map((item) => (
+    return filteredMedia.slice(0, 20).map((item) => (
       <div
         className="media-card flex flex-col align-center justify-center"
         key={item.title}
       >
         <img
           className="media-img"
-          key={item.title}
           src={item.images["Poster Art"].url}
           alt={item.title}
+          onError={(e) => {
+            e.target.onerror = null;
+            e.target.src =
+              "https://placehold.co/100x150/444444/FFFFFF?text=Not+Available";
+          }}
         />
         <span>{item.title}</span>
       </div>
@@ -54,7 +58,7 @@ const Media = ({ programType }) => {
   // Funcion util para mostrar en consola los elementos filtrados clickando por ejemplo un botón. No es necesario para la tarea.
   const consolelog = () => {
     console.log(moviesAndSeries);
-    console.log(filterMedia);
+    console.log(filteredMedia);
   };
 
   return (
