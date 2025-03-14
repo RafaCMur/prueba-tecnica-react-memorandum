@@ -1,0 +1,26 @@
+.social-icon {
+  width: 2rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.store-icon {
+  width: 6rem;
+  height: auto;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-content {
+  max-width: 1000px;
+}
+
+footer {
+  background-color: #424242;
+  color: white;
+  padding: 1.5rem 0; /* Esto es: padding arriba y abajo 1.5rem y padding a los lados 0 */
+  padding: 2rem 0;
+}

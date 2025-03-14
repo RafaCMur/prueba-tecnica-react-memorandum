@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Inicio from "./components/Inicio";
 import Series from "./components/Series";
 import Peliculas from "./components/Peliculas";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/series" element={<Series />} />
           <Route path="/peliculas" element={<Peliculas />} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
