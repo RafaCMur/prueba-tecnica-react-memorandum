@@ -24,7 +24,7 @@ const Inicio = () => {
               ></div>
               <span className="child-text">SERIES</span>
             </div>
-            <p className="w-100 text-start">Popular Series</p>
+            <p className="w-100 text-start">Series Populares</p>
           </div>
 
           <div className="flex flex-col align-center justify-center">
@@ -40,23 +40,8 @@ const Inicio = () => {
               ></div>
               <span className="child-text">MOVIES</span>
             </div>
-            <p className="w-100 text-start">Popular Films</p>
+            <p className="w-100 text-start">Peliculas populares</p>
           </div>
-
-          {/* <div className="flex flex-col align-center justify-center">
-            <div
-              className="media-card-inicio flex flex-col align-center justify-center"
-              onClick={() => navigate("/peliculas")}
-            >
-              <span className="placeholder-text">MOVIES</span>
-              <img
-                className="placeholder-img"
-                src="/prueba-react/assets/placeholder.png"
-                alt="Logo"
-              />
-            </div>
-            <span>Popular Films</span>
-          </div> */}
         </div>
       </section>
     </>
