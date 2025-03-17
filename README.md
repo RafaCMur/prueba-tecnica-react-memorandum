@@ -112,6 +112,8 @@ Así me ahorro problemas con el fetch y gano en eficiencia.
 
 - Despliegue automático con Jenkins o Vercel.
 
+- Versioning y CHANGELOG.md
+
 - Crearía un componente solo para la sección, tal y como muestro en mi proyecto de next (en este caso está hecho con tailwind):
 
 import React from "react";
